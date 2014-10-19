@@ -1,0 +1,26 @@
+<head>
+  <title>Forest</title>
+  <meta property="og:image" content="Forest.png" />
+<style>
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+</style>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/Processing.js/processing.min.js"></script>
+</head>
+<div class="container" id="div_p5canvas">
+<canvas id="canvas" data-processing-sources="Forest.pde" style="height:auto; width:auto; focus { outline: 0; }" tabindex="1"></canvas>
+</div>
+<script>
+resizeFrame = function() {
+  var pjs = Processing.getInstanceById('canvas');
+  pjs.resizeSketch(document.getElementById('div_p5canvas').offsetWidth,    document.getElementById('div_p5canvas').offsetHeight);
+};
+
+$(window).resize(resizeFrame);
+</script>
