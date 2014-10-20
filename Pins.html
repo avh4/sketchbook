@@ -1,0 +1,52 @@
+<head>
+  <title>AV :: Pins</title>
+  <meta name="description" content="A square of black pins in Processing.js" />
+
+  <!-- Schema.org markup for Google+ -->
+  <meta itemprop="name" content="AV :: Pins">
+  <meta itemprop="description" content="A square of black pins in Processing.js">
+  <meta itemprop="image" content="https://avh4.github.io/sketchbook/Pins.png">
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <!-- <meta name="twitter:site" content="@publisher_handle"> -->
+  <meta name="twitter:title" content="AV :: Pins">
+  <meta name="twitter:description" content="A square of black pins in Processing.js">
+  <meta name="twitter:creator" content="@avh4">
+  <meta name="twitter:image:src" content="https://avh4.github.io/sketchbook/Pins.png">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="AV :: Pins" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://avh4.github.io/sketchbook/Pins.html" />
+  <meta property="og:image" content="https://avh4.github.io/sketchbook/Pins.png" />
+  <meta property="og:description" content="A square of black pins in Processing.js" />
+  <!-- <meta property="og:site_name" content="Site Name, i.e. Moz" /> -->
+  <!-- <meta property="article:published_time" content="2013-09-17T05:59:00+01:00" />
+  <meta property="article:modified_time" content="2013-09-16T19:08:47+01:00" /> -->
+  <!-- <meta property="article:section" content="Article Section" /> -->
+  <!-- <meta property="article:tag" content="Article Tag" /> -->
+  <!-- <meta property="fb:admins" content="Facebook numberic ID" /> -->
+<style>
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+</style>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/Processing.js/processing.min.js"></script>
+</head>
+<div class="container" id="div_p5canvas">
+<canvas id="canvas" data-processing-sources="Pins.pde" style="height:auto; width:auto; focus { outline: 0; }" tabindex="1"></canvas>
+</div>
+<script>
+resizeFrame = function() {
+  var pjs = Processing.getInstanceById('canvas');
+  pjs.resizeSketch(document.getElementById('div_p5canvas').offsetWidth,    document.getElementById('div_p5canvas').offsetHeight);
+};
+
+$(window).resize(resizeFrame);
+</script>
