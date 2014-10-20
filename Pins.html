@@ -42,11 +42,4 @@
 <div class="container" id="div_p5canvas">
 <canvas id="canvas" data-processing-sources="Pins.pde" style="height:auto; width:auto; focus { outline: 0; }" tabindex="1"></canvas>
 </div>
-<script>
-resizeFrame = function() {
-  var pjs = Processing.getInstanceById('canvas');
-  pjs.resizeSketch(document.getElementById('div_p5canvas').offsetWidth,    document.getElementById('div_p5canvas').offsetHeight);
-};
-
-$(window).resize(resizeFrame);
-</script>
+<script src="bootstrap.js"></script>
