@@ -24,19 +24,21 @@ a img {
 a div {
   position: absolute;
   left: 0;
-  bottom: 15pt;
-  width: 100%;
+  bottom: 0pt;
+  width: 142.8%;
+  left: -21%;
+  padding: 8pt 0px;
   text-decoration: none;
-  color: white;
+  color: black;
   font-size: 18pt;
-  opacity: 0;
-  text-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
+  text-shadow: 0px 0px 5px rgba(255, 255, 255, 1);
   -o-transition: all .1s ease-in;
   -webkit-transition: all .1s ease-in;
   -moz-transition: all 1.5s ease-in;
-  -o-transform: scale(0.9);
-  -webkit-transform: scale(0.9);
-  -moz-transform: scale(0.9);
+  -o-transform: scale(0.7);
+  -webkit-transform: scale(0.7);
+  -moz-transform: scale(0.7);
+  background-color: rgba(255, 255, 255, 0.6);
 }
 a:hover {
   z-index: 100;
@@ -46,7 +48,12 @@ a:hover {
 }
 
 a:hover div {
-  opacity: 1;
+  width: 100%;
+  left: 0px;
+  bottom: 15pt;
+  color: white;
+  background: transparent;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
   -o-transform: scale(1);
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
